@@ -13,15 +13,10 @@ ARCHS=(--arch arm64 --arch x86_64)
 swift build -c release "${ARCHS[@]}"
 cp "$(swift build -c release "${ARCHS[@]}" --show-bin-path)/PortWatch" "$APP/Contents/MacOS/"
 
-# App icon from the 1024px logo.
-ICONSET=$DIST/AppIcon.iconset
-mkdir "$ICONSET"
-for s in 16 32 128 256 512; do
-  sips -z $s $s Assets/logo.png --out "$ICONSET/icon_${s}x${s}.png" >/dev/null
-  sips -z $((s * 2)) $((s * 2)) Assets/logo.png --out "$ICONSET/icon_${s}x${s}@2x.png" >/dev/null
-done
-iconutil -c icns "$ICONSET" -o "$APP/Contents/Resources/AppIcon.icns"
-rm -r "$ICONSET"
+# Liquid Glass app icon from the Icon Composer file (actool also writes an .icns fallback for older macOS).
+xcrun actool Assets/AppIcon.icon --compile "$APP/Contents/Resources" --app-icon AppIcon \
+  --platform macosx --minimum-deployment-target 15.0 --output-partial-info-plist "$DIST/icon.plist" >/dev/null
+rm "$DIST/icon.plist"
 
 cat > "$APP/Contents/Info.plist" <<PLIST
 <?xml version="1.0" encoding="UTF-8"?>
@@ -33,6 +28,7 @@ cat > "$APP/Contents/Info.plist" <<PLIST
   <key>CFBundleIdentifier</key><string>io.github.hourmeng12.PortWatch</string>
   <key>CFBundleExecutable</key><string>PortWatch</string>
   <key>CFBundleIconFile</key><string>AppIcon</string>
+  <key>CFBundleIconName</key><string>AppIcon</string>
   <key>CFBundlePackageType</key><string>APPL</string>
   <key>CFBundleShortVersionString</key><string>$VERSION</string>
   <key>CFBundleVersion</key><string>$VERSION</string>
