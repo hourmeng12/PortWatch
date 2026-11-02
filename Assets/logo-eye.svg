@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#12305A"/>
+      <stop offset="1" stop-color="#0A1628"/>
+    </linearGradient>
+    <linearGradient id="iris" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#6CF5C8"/>
+      <stop offset="1" stop-color="#18A6E0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#2FD3D3" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#2FD3D3" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- macOS icon grid: 824pt squircle on a 1024 canvas -->
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#bg)"/>
+  <circle cx="512" cy="512" r="360" fill="url(#glow)"/>
+  <g fill="none" stroke="#FFFFFF" stroke-opacity="0.07" stroke-width="4">
+    <circle cx="512" cy="512" r="250"/>
+    <circle cx="512" cy="512" r="330"/>
+  </g>
+  <!-- eye -->
+  <path d="M222 512 C320 352 416 310 512 310 C608 310 704 352 802 512 C704 672 608 714 512 714 C416 714 320 672 222 512 Z"
+        fill="#0E2442" stroke="#EAFBFF" stroke-width="40" stroke-linejoin="round"/>
+  <circle cx="512" cy="512" r="148" fill="url(#iris)"/>
+  <!-- ethernet socket as the pupil -->
+  <path d="M440 466 H584 V548 H548 V574 H476 V548 H440 Z"
+        fill="#0A1628" stroke="#0A1628" stroke-width="16" stroke-linejoin="round"/>
+  <g stroke="#4FDCCB" stroke-width="10" stroke-linecap="round">
+    <line x1="468" y1="480" x2="468" y2="502"/>
+    <line x1="497" y1="480" x2="497" y2="502"/>
+    <line x1="527" y1="480" x2="527" y2="502"/>
+    <line x1="556" y1="480" x2="556" y2="502"/>
+  </g>
+  <circle cx="598" cy="428" r="17" fill="#FFFFFF" fill-opacity="0.85"/>
+</svg>

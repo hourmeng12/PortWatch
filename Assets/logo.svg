@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F2F4F6"/><stop offset="1" stop-color="#AEB6BF"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A313A"/><stop offset="1" stop-color="#161A20"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E6EAEE"/><stop offset="1" stop-color="#8E98A3"/>
+    </linearGradient>
+  </defs>
+  <!-- macOS icon grid: 824pt squircle on a 1024 canvas; aluminium utility body -->
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#body)"/>
+  <rect x="104" y="104" width="816" height="816" rx="181" fill="none" stroke="#FFFFFF" stroke-opacity="0.7" stroke-width="6"/>
+  <!-- recessed patch panel: four ports, one idle -->
+  <rect x="186" y="246" width="652" height="532" rx="64" fill="#7F8994"/>
+  <rect x="192" y="252" width="640" height="520" rx="58" fill="url(#panel)"/>
+  <circle cx="232" cy="292" r="15" fill="url(#metal)" stroke="#11151A" stroke-width="3"/><line x1="224" y1="284" x2="240" y2="300" stroke="#4A535E" stroke-width="4" stroke-linecap="round"/><circle cx="232" cy="732" r="15" fill="url(#metal)" stroke="#11151A" stroke-width="3"/><line x1="224" y1="724" x2="240" y2="740" stroke="#4A535E" stroke-width="4" stroke-linecap="round"/><circle cx="792" cy="292" r="15" fill="url(#metal)" stroke="#11151A" stroke-width="3"/><line x1="784" y1="284" x2="800" y2="300" stroke="#4A535E" stroke-width="4" stroke-linecap="round"/><circle cx="792" cy="732" r="15" fill="url(#metal)" stroke="#11151A" stroke-width="3"/><line x1="784" y1="724" x2="800" y2="740" stroke="#4A535E" stroke-width="4" stroke-linecap="round"/>
+  <path d="M287 362 H457 V457 H417 V487 H327 V457 H287 Z" fill="#05070A" stroke="#7D8895" stroke-width="10" stroke-linejoin="round"/><g stroke="#E3B04B" stroke-width="9" stroke-linecap="round"><line x1="327" y1="376" x2="327" y2="402"/><line x1="357" y1="376" x2="357" y2="402"/><line x1="387" y1="376" x2="387" y2="402"/><line x1="417" y1="376" x2="417" y2="402"/></g><circle cx="442" cy="330" r="30" fill="#3DDC84" opacity="0.25"/><circle cx="442" cy="330" r="13" fill="#3DDC84"/><path d="M567 362 H737 V457 H697 V487 H607 V457 H567 Z" fill="#05070A" stroke="#7D8895" stroke-width="10" stroke-linejoin="round"/><g stroke="#E3B04B" stroke-width="9" stroke-linecap="round"><line x1="607" y1="376" x2="607" y2="402"/><line x1="637" y1="376" x2="637" y2="402"/><line x1="667" y1="376" x2="667" y2="402"/><line x1="697" y1="376" x2="697" y2="402"/></g><circle cx="722" cy="330" r="30" fill="#3DDC84" opacity="0.25"/><circle cx="722" cy="330" r="13" fill="#3DDC84"/><path d="M287 582 H457 V677 H417 V707 H327 V677 H287 Z" fill="#05070A" stroke="#7D8895" stroke-width="10" stroke-linejoin="round"/><g stroke="#E3B04B" stroke-width="9" stroke-linecap="round"><line x1="327" y1="596" x2="327" y2="622"/><line x1="357" y1="596" x2="357" y2="622"/><line x1="387" y1="596" x2="387" y2="622"/><line x1="417" y1="596" x2="417" y2="622"/></g><circle cx="442" cy="550" r="30" fill="#3DDC84" opacity="0.25"/><circle cx="442" cy="550" r="13" fill="#3DDC84"/><path d="M567 582 H737 V677 H697 V707 H607 V677 H567 Z" fill="#05070A" stroke="#7D8895" stroke-width="10" stroke-linejoin="round"/><g stroke="#E3B04B" stroke-width="9" stroke-linecap="round"><line x1="607" y1="596" x2="607" y2="622"/><line x1="637" y1="596" x2="637" y2="622"/><line x1="667" y1="596" x2="667" y2="622"/><line x1="697" y1="596" x2="697" y2="622"/></g><circle cx="722" cy="550" r="13" fill="#3A434E"/>
+</svg>
